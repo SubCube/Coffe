@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #a89f9f;
+    /* background-image: url(assets/Снимок\ экрана\ 2021-02-16\ в\ 21.26.08.png);
+    background-size: cover; */
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: rgb(75, 72, 72);
+    width: 120px;
+    height: 120px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li{
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    color: aliceblue;
+    margin-left: 40px;
+    cursor: pointer;
+}
+header ul li:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+/* .content{
+    background-color: rgba(255, 255, 255, 0.2);
+} */
