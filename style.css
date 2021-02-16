@@ -9,7 +9,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: #a89f9f;
+    background-color: #f4f9f9;
     /* background-image: url(assets/Снимок\ экрана\ 2021-02-16\ в\ 21.26.08.png);
     background-size: cover; */
 }
@@ -22,6 +22,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 header {
@@ -40,7 +42,7 @@ header a{
     align-items: center;
     border-radius: 50%;
     padding: 20px;
-    background-color: rgb(75, 72, 72);
+    background-color: #a1cae2;
     width: 120px;
     height: 120px;
 }
@@ -55,9 +57,10 @@ header ul li{
     text-decoration: none;
     text-transform: uppercase;
     list-style: none;
-    color: aliceblue;
+    color: #cfc5a5;
     margin-left: 40px;
     cursor: pointer;
+    font-weight: 500;
 }
 header ul li:hover{
     text-decoration: underline;
@@ -68,6 +71,40 @@ header ul li:hover{
     height: 100px;
 }
 
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -1;
+}
+.content::after{
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    right: -250px;
+    bottom: -250px;
+    border-radius: 50%;
+    background-color: #cfc5a5;
+    z-index: -1;
+}
+
+footer{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul{
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
 /* .content{
     background-color: rgba(255, 255, 255, 0.2);
 } */
