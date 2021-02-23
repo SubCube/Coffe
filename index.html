@@ -21,17 +21,19 @@
         </header>
         <div class="content">
             <div class="text">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis at aperiam pariatur quo distinctio atque incidunt unde illum nulla itaque nemo consequatur harum accusamus, rem praesentium, alias voluptas, labore odio totam numquam in. Mollitia, temporibus.</p>
+                <p><span>Lorem, ipsum dolor sit </span><br/> amet consectetur adipisicing elit. Debitis at aperiam pariatur quo distinctio atque incidunt unde illum nulla itaque nemo consequatur harum accusamus, rem praesentium, alias voluptas, labore odio totam numquam in. Mollitia, temporibus.</p>
             </div>
             <div class="imgBox">
-                <img src="assets/CoffeeLogo.png" alt="img">
+                <img src="assets/coffe1.jpeg" alt="img" class="active">
+                <img src="assets/coffe2.jpg" alt="img">
+                <img src="assets/coffe3.jpg" alt="img">
             </div>
         </div>
         <footer>
             <ul>
-                <li>Photo</li>
-                <li>Video</li>
-                <li>Music</li>
+                <li onclick="changePhoto(0)">Капучино</li>
+                <li onclick="changePhoto(1)">Латте</li>
+                <li onclick="changePhoto(2)">Флэт уайт</li>
             </ul>
         </footer>
     </section>
